@@ -7,11 +7,12 @@
 <div align=center> <img src="img_1.png"  style="zoom: 72%;"></div>
 <div align=center> <img src="img_2.png"  style="zoom: 57%;"></div>
 
-### TL;DR
+## Introduction 
+TL;DR
 
 We proposed a novel metric for a more balanced evaluation of Few-Shot Class-incremental Learning (FSCIL) methods.
 Further, we also provide analyses of Vision Transformers(ViT) on FSCIL 
-and design the feature ratification module learning from intermediate features.
+and design the feature rectification module learning from intermediate features.
 ## Environments
 
 - Python: 3.8.17
@@ -39,6 +40,7 @@ Note that if you want to train on task 1, please refer to the **Base task traini
 ## Evaluation
 We proposed a novel evaluation metric called *generalized average accuracy* (gAcc), which provides a more balanced assessment of FSCIL methods.
 The codes for gAcc is the ```generalised_avg_acc()``` function in `models/metric.py`, which inputs the range of the parameter $\alpha$ and the accuracy at each task.
+By default, we show gAcc and aAcc of our method after training of each task, feel free to use this metric for any other methods!
 
 ## Base Task Training (optional)
 We also provide codes for training our ViT backbone on the base task (task 1, with 60 classes).
