@@ -1,0 +1,39 @@
+
+model: vitbaselinefewshot
+backbones: deit_my_small_patch16_pure_224
+testing_interval: 10
+batch_size: 384
+input_size: 224
+
+eval_type: cnn
+memory_size: 0
+classifier_config:
+    type: cosine
+
+frozen_config:
+    on: True
+
+repeat_split: False
+repeated_aug: True
+
+train_loader_len_factor: 1
+pretrain_config:
+    lr_config:
+        epochs: 300
+        lr: 5.0e-4
+        lr_noise_pct: 0.67
+        lr_noise_std: 1
+        sched: cosine
+        warmup_lr: 1.0e-7
+        warmup_epochs: 5
+        min_lr: 5.0e-6
+        weight_decay: 0.05
+        momentum: 0.9
+        opt: adamw
+        cooldown_epochs: 10
+        patience_epochs: 10
+
+dump_predictions: True
+
+only_stage0: True
+save_pretrained_path: "./pretrained_imageNet_patch16_224/"

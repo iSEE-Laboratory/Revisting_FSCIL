@@ -1,0 +1,4 @@
+.idea
+checkpoints
+baseline_inc/teacher_chkpts
+baseline_inc/pretrained_imageNet_patch16_224
