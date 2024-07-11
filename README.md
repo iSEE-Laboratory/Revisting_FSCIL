@@ -1,5 +1,5 @@
 # Rethinking Few-shot Class-incremental Learning: Learning from Yourself (ECCV2024)
-### Official PyTorch implementation of our ECCV2024 paper “Rethinking Few-shot Class-incremental Learning: Learning from Yourself”. [Paper link to be updated]()
+### Official PyTorch implementation of our ECCV2024 paper “Rethinking Few-shot Class-incremental Learning: Learning from Yourself”. [[Paper](http://arxiv.org/abs/2407.07468)]
 
 
 
