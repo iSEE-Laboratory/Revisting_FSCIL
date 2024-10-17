@@ -151,6 +151,7 @@ class ImageNet100(DataHandler):
 
 
 class CUB200(DataHandler):
+    image_size = 224
     train_transforms = [
         transforms.Resize(256),
         transforms.RandomResizedCrop(224),

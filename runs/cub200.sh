@@ -3,6 +3,7 @@ gpu=$2
 echo $LABEL
 echo $gpu
 python train.py \
+  -image_size 224 \
   -project my_vit \
   -dataset cub200 \
   -epochs_base 100 \
@@ -21,7 +22,7 @@ python train.py \
   -branches 1 \
   -new_mode \
   avg_cos \
-  -stage0_chkpt /home/yuming/TTA/src/ParamAug/results/dev/ParameterAugment/202310/week_4/20231028_fewshot_cub200_m0_F_baseline_pure_my_vit_nano_patch16_cos_300_ra4_lr1e-4_new_corr/net_0_task_0.pth \
+  -stage0_chkpt checkpoints/stage0_chkpts/cub200/net_0_task_0.pth \
   -no_tta \
   -epochs_fr 100 \
   -exp_name $LABEL \

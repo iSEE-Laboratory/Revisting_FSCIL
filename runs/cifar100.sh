@@ -22,7 +22,7 @@ python train.py \
   -branches 1 \
   -new_mode \
   avg_cos \
-  -stage0_chkpt checkpoint/cifar100/my_vit_patch3_pure_82.9/net_0_task_0.pth \
+  -stage0_chkpt checkpoints/stage0_chkpts/cifar100/net_0_task_0.pth \
   -no_tta \
   -epochs_fr 100 \
   -exp_name $LABEL \

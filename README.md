@@ -36,6 +36,9 @@ After downloading, please put all datasets into the `./data` directory.
   and put them into the `checkpoints` path.
 Note that if you want to train on task 1, please refer to the **Base task training** section.
 - **Step2**, just run ```bash runs/cifar100.sh``` for cifar100 training, ```runs/miniImageNet.sh``` for *mini*/ImageNet training and ```bash runs/cub200.sh``` for CUB200 training.
+  ```
+   bash runs/cifar100.sh exp_name gpu_id
+  ```
 
 ## Evaluation
 We proposed a novel evaluation metric called *generalized average accuracy* (gAcc), which provides a more balanced assessment of FSCIL methods.

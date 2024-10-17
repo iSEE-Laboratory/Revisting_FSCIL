@@ -22,7 +22,7 @@ python train.py \
   -branches 1 \
   -new_mode \
   avg_cos \
-  -stage0_chkpt checkpoint/mini_imagenet/my_vit_84.5_pure/net_0_task_0.pth \
+  -stage0_chkpt checkpoints/stage0_chkpts/miniImageNet/net_0_task_0.pth \
   -no_tta \
   -epochs_fr 100 \
   -exp_name $LABEL \
