@@ -8,11 +8,13 @@
 <div align=center> <img src="img_2.png"  style="zoom: 57%;"></div>
 
 ## Introduction 
-TL;DR
+**TL;DR**
 
 We proposed a novel metric for a more balanced evaluation of Few-Shot Class-incremental Learning (FSCIL) methods.
 Further, we also provide analyses of Vision Transformers(ViT) on FSCIL 
 and design the feature rectification module learning from intermediate features.
+
+**Update 12/01/2025:** As requested, we have release the codes for Figure 5, 6 and Figure A3 in the appendix at this [URL](https://drive.google.com/drive/folders/1-kcLFgICLre0WP7N6wImXxXlxBsnRrE4)
 ## Environments
 
 - Python: 3.8.17
